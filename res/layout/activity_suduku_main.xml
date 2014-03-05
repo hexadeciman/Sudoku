@@ -38,7 +38,11 @@
 	    <Button
 	        android:text="Start"
 	        android:id="@+id/imageButton"
+<<<<<<< HEAD
      		android:onClick="start"
+=======
+	        
+>>>>>>> 021d4d72e30b84f27d6c4f0414683143d362bd89
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_centerInParent="true"
@@ -46,8 +50,12 @@
 	        android:contentDescription="button"
 	         />
 	</RelativeLayout>
+<<<<<<< HEAD
 	
 	<RelativeLayout
+=======
+<RelativeLayout
+>>>>>>> 021d4d72e30b84f27d6c4f0414683143d362bd89
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_marginLeft="25dip"
@@ -66,6 +74,10 @@
 	        android:text="Hi Score" />
 	</RelativeLayout>
 	
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 021d4d72e30b84f27d6c4f0414683143d362bd89
 
 	<ListView  
         android:id="@+id/listView1"  
