@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sudoku</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">SuDoKu</string>
+ <string-array name="names">
+      <item>MONT Blanc</item>
+      <item>Gucci</item>
+      <item>Parker</item>
+      <item>Sailor</item>
+      <item>Porsche Design</item>
+      <item>Rotring</item>
+      <item>Sheaffer</item>
+      <item>Waterman</item>
+</string-array>
+</resources>
