@@ -42,11 +42,16 @@
 	    android:orientation="horizontal" >
  
 	    	<com.example.sudoku.Grid
+	    	            android:id="@+id/maGrille"  
 				     android:layout_width="fill_parent"
 				     android:layout_height="fill_parent"
  			/>
-	    	
+	    	    		
 	   	</LinearLayout>
-    	
-    	
+
+    	<ListView  
+	        android:id="@+id/listView2"  
+    	android:layout_width="fill_parent"    	
+        android:layout_height="fill_parent">  
+    </ListView>
 </LinearLayout>
