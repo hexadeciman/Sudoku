@@ -1,10 +1,10 @@
 package com.example.sudoku;
 
 public class Tuple { 
-	  public  int x; 
-	  public  int y; 
-	  public int xf;
-	  public int yf;
+	  private  int x; 
+	  private  int y; 
+	  private int xf;
+	  private int yf;
 	  
 	  public Tuple(int x, int y) { 
 	    this.x = x; 

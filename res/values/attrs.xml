@@ -1,5 +1,5 @@
 <resources>
-   <declare-styleable name="Grid">
+   <declare-styleable name="GridCustView">
        <attr name="showText" format="boolean" />
        <attr name="labelPosition" format="enum">
            <enum name="left" value="0"/>

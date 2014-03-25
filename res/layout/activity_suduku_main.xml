@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".SudukuMain" >
+    tools:context=".MainActivity" >
 
 	<LinearLayout
 	    android:layout_width="fill_parent"
@@ -18,7 +18,7 @@
 	    android:orientation="horizontal" >
 
 	    <TextView
-	        android:layout_width="wrap_content"
+	        android:layout_width="0dip"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"
 	        android:textSize="64sp"
@@ -36,13 +36,13 @@
 	    android:orientation="horizontal" >
 
 	    <Button
-	        android:text="Start"
 	        android:id="@+id/imageButton"
      		android:onClick="start"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_centerInParent="true"
 	        android:background="@drawable/btnx"
+	        android:text="Start"
 	        android:contentDescription="button"
 	         />
 	</RelativeLayout>
@@ -56,7 +56,8 @@
 	    android:orientation="horizontal" >
 
 	    <Button
-	        android:id="@+id/imageButton"
+	        android:id="@+id/imageButton2"
+	        android:onClick="showHighScore"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_centerInParent="true"
@@ -70,9 +71,8 @@
         android:id="@+id/listView1"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
-        android:layout_alignParentLeft="true"  
-        android:layout_alignParentTop="true"  
         android:layout_marginLeft="66dp"  
         android:layout_marginTop="53dp" >  
     </ListView>
+
 </LinearLayout>

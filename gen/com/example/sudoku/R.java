@@ -54,23 +54,29 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020008;
     }
     public static final class id {
-        public static final int about=0x7f040007;
-        public static final int action_settings=0x7f040008;
-        public static final int difficulty=0x7f040006;
-        public static final int imageButton=0x7f040004;
+        public static final int about=0x7f04000b;
+        public static final int action_settings=0x7f04000c;
+        public static final int difficulty=0x7f04000a;
+        public static final int how=0x7f040009;
+        public static final int imageButton=0x7f040005;
+        public static final int imageButton2=0x7f040006;
         public static final int left=0x7f040000;
-        public static final int listView1=0x7f040005;
-        public static final int listView2=0x7f040003;
-        public static final int maGrille=0x7f040002;
+        public static final int listView1=0x7f040007;
+        public static final int listView2=0x7f040004;
+        public static final int maGrille=0x7f040003;
+        public static final int pause=0x7f040008;
         public static final int right=0x7f040001;
+        public static final int timeLeft=0x7f040002;
     }
     public static final class layout {
         public static final int activity_grid_sudoku=0x7f030000;
         public static final int activity_suduku_main=0x7f030001;
+        public static final int custom=0x7f030002;
     }
     public static final class menu {
-        public static final int menu_top_home=0x7f090000;
-        public static final int suduku_main=0x7f090001;
+        public static final int menu_top_game=0x7f090000;
+        public static final int menu_top_home=0x7f090001;
+        public static final int suduku_main=0x7f090002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -106,24 +112,24 @@ containing a value of this type.
         public static final int AppTheme=0x7f080001;
     }
     public static final class styleable {
-        /** Attributes that can be used with a Grid.
+        /** Attributes that can be used with a GridCustView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Grid_labelPosition com.example.sudoku:labelPosition}</code></td><td></td></tr>
-           <tr><td><code>{@link #Grid_showText com.example.sudoku:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridCustView_labelPosition com.example.sudoku:labelPosition}</code></td><td></td></tr>
+           <tr><td><code>{@link #GridCustView_showText com.example.sudoku:showText}</code></td><td></td></tr>
            </table>
-           @see #Grid_labelPosition
-           @see #Grid_showText
+           @see #GridCustView_labelPosition
+           @see #GridCustView_showText
          */
-        public static final int[] Grid = {
+        public static final int[] GridCustView = {
             0x7f010000, 0x7f010001
         };
         /**
           <p>This symbol is the offset where the {@link com.example.sudoku.R.attr#labelPosition}
-          attribute's value can be found in the {@link #Grid} array.
+          attribute's value can be found in the {@link #GridCustView} array.
 
 
           <p>Must be one of the following constant values.</p>
@@ -137,10 +143,10 @@ containing a value of this type.
 </table>
           @attr name com.example.sudoku:labelPosition
         */
-        public static final int Grid_labelPosition = 1;
+        public static final int GridCustView_labelPosition = 1;
         /**
           <p>This symbol is the offset where the {@link com.example.sudoku.R.attr#showText}
-          attribute's value can be found in the {@link #Grid} array.
+          attribute's value can be found in the {@link #GridCustView} array.
 
 
           <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -151,6 +157,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.sudoku:showText
         */
-        public static final int Grid_showText = 0;
+        public static final int GridCustView_showText = 0;
     };
 }

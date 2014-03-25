@@ -1,11 +1,10 @@
 package com.example.sudoku;
-
 import java.util.ArrayList;
 
 /**
  * Create a SudokuGrid
  */
-public class SudokuGrid{
+public class SudokuController{
 
 	// The grid
 	private int[][] grid;
@@ -26,7 +25,7 @@ public class SudokuGrid{
 	 * Create a new sudoku grid according to the selected difficulty.
 	 * @param difficulty The difficulty chosen by the user (from 0 to 2 <-> easy to difficult). 
 	 */
-	public SudokuGrid(int difficulty) {
+	public SudokuController(int difficulty) {
 		enteredNumbers = 0;
 		grid = new int[9][9];
 		isSetAtFirst = new boolean[9][9];
@@ -44,7 +43,6 @@ public class SudokuGrid{
 	
 	public void  changeDiff(int difficulty){
 		setGridValues(difficulty);
-
 	}
 	
 	/**
@@ -109,13 +107,20 @@ public class SudokuGrid{
 	}
 	*/
 	
-	public boolean PlayerAdd(int i, int j, int val){
+	public int PlayerAdd(int i, int j, int val){
+		int res = 0;
 		if (canAddAt(val, i, j)){
 			addAt(val, i, j);
-			return true;
+			res = 1;
+		}else{
+			res = 3;
 		}
-		return false;
+		if (isFinished()){
+			res = 2;
+		}
+		return res;
 	}
+	
 	
 	
 	/**
@@ -141,9 +146,11 @@ public class SudokuGrid{
 	 * @param line The cell line number
 	 * @param column The cell column number
 	 */
-	public boolean deleteAt(int line, int column) {
+	public boolean deleteAt(int column, int line) {
+		System.out.println("line column: "+line+" "+column);
 		int squareIndex = (column/3)+(line/3)*3;
 		int val = grid[line][column];
+		System.out.println("value: "+val);
 		if (val != 0){
 			if (isSetAtFirst[line][column]){
 				return false;
